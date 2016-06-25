@@ -1,0 +1,15 @@
+{
+  "name": "puppet-upstart",
+  "version": "0.1.0",
+  "author": "puppet",
+  "summary": "This module manages Upstart job configurations and the resulting services. It includes support for enabling Upstart's per-user jobs.",
+  "license": "Apache-2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
