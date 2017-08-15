@@ -38,16 +38,16 @@ define upstart::job (
 
   require upstart
 
-  validate_re($ensure, '^(present|absent)$',
+  validate_re("$ensure", '^(present|absent)$',
   'ensure must be "present" or "absent".')
 
-  validate_re($service_ensure, '^(running|true|stopped|false)$',
+  validate_re("$service_ensure", '^(running|true|stopped|false)$',
   'service_ensure must be "running" or "stopped".')
 
-  validate_re($console, '^(log|none|output)$',
+  validate_re("$console", '^(log|none|output)$',
   'console must be "log", "none", or "output".')
 
-  validate_re($expect, '^(|fork|daemon|stop)$',
+  validate_re("$expect", '^(|fork|daemon|stop)$',
   'expect must be "fork", "daemon", "stop".')
 
   validate_bool($service_enable)
